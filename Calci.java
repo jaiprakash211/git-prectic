@@ -1,3 +1,4 @@
+import java.utill.Scanner;
 interface Calci
 {
 int getSum(int n1 , int n2);
@@ -10,3 +11,18 @@ class Calci Impl implements Calci
     }
 
 }
+public class CalciDriver
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two number to find the sum");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        CalciImpl c=new CalciImpl();
+        int sum=c.getSum(n1,n2);
+        System.out.println(n1+"+"+n2+"="+sum);
+    }
+
+}
+
